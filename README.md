@@ -13,7 +13,7 @@ Um aplicativo que visa melhorar o cotidiano dos estudantes e funcionarios da can
 - [Histórias de Usuário](docs/historias_usuario.md)
 - [Critérios de Aceitação](docs/criterios_aceitacao.md)
 ## Status
-Projeto em fase de planejamento
+Projeto em fase de desenvolvimento
 ## Equipe
 Integrantes da equipe do software:
     Arthur Barbosa
