@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> Cantina + </title>
 
-  <meta name="Cantina +" content="Software projetado pela equipe composta por: Arthur, José Messias, Maria Clara dos Santos, Maria Elaine e Samila">
+  <meta name= "Cantina +" content="Software projetado pela equipe composta por: Arthur, José Messias, Maria Clara dos Santos, Maria Elaine e Samila">
 
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,74 +23,45 @@
     body {
       display: flex;
       flex-direction: column;
-      position: relative;
-
-
-      color: white !important;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("assets/restaurante.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      filter: brightness(0.35);
-      z-index: -1;
     }
 
     main {
       flex: 1;
     }
+  </style> 
 
-    h1, p, li, a, span, .breadcrumb, .lead {
-      color: white !important;
-    }
-
-    .breadcrumb-item.active {
-      color: white !important;
-    }
-
-    .quadrado {
-      aspect-ratio: 60/9;
-      width: 320px;
-      background: transparent;
-      border-radius: 15px;
-      border: 3px solid rgb(132, 0, 255);
-      position: absolute;
-      top: 115px;
-      left: 520px;
-    }
-
-    .quadrado2 {
-      aspect-ratio: 70/9;
-      width: 470px;
-      background: transparent;
-      border-radius: 15px;
-      border: 3px solid rgb(132, 0, 255);
-      position: absolute;
-      top: 185px;
-      left: 450px;
-    }
-  </style>
 
 </head>
 
 <body>
 
+  <style>
+  .quadrado {
+    aspect-ratio: 60/9;
+    width: 320px;
+    background: transparent; /* Cor de fundo */
+    border-radius: 15px; /* Arredondamento das bordas */
+    border: 3px, solid, rgb(132, 0, 255);
+    position:absolute;
+    top: 170px;
+    left: 520px;
+    
+  }
+  .quadrado2 {
+    aspect-ratio: 70/9;
+    width: 470px;
+    background: transparent; /* Cor de fundo */
+    border-radius: 15px; /* Arredondamento das bordas */
+    border: 3px, solid, rgb(132, 0, 255);
+    position:absolute;
+    top: 240px;
+    left: 420px;
+    
+  }
+  </style>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-
-      <a class="navbar-brand" href="#">
-        <img src="assets/cantina+.png" alt="Cantina +" height="40" style="filter: brightness(0) invert(1);">
-      </a>
-
+      <a class="navbar-brand" href="#"> Cantina + </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -100,7 +71,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html"> Início </a>
-          </li>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="informações.html"> Informações </a>
           </li>
@@ -115,24 +86,30 @@
     </div>
   </nav>
 
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"> Início </li>
+    </ol>
+  </nav>
 
   <main class="container my-5">
     <h1 class="text-center mb-4">Bem-vindo(a)!</h1>
-
+   
     <h1 class="text-center mb-4"> Mais sabor, menos fila </h1>
     <p class="text-center lead">
       Um software criado especificamente para otimizar seu tempo na cantina.
     </p>
+  </section>
+</main>
+
   </main>
-
-  <div class="quadrado"></div>
-  <div class="quadrado2"></div>
-
-  <footer class="bg-dark text-white text-center py-4 mt-auto">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 projetado por Samila, Clara Santos, Arthur, Messias e Elaine </p>
-    </div>
-  </footer>
+    <div class="quadrado"></div>
+    <div class="quadrado2"></div>
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 projetado por Samila, Clara Santos, Arthur, Messias e Elaine </p>
+  </div>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

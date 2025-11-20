@@ -25,10 +25,11 @@
       flex-direction: column;
       position: relative;
 
-
+      /* 🔥 Todos os textos em branco */
       color: white !important;
     }
 
+    /* 🔥 Overlay escuro + imagem de fundo */
     body::before {
       content: "";
       position: fixed;
@@ -42,13 +43,14 @@
       background-repeat: no-repeat;
 
       filter: brightness(0.35);
-      z-index: -1;
+      z-index: -1; /* Fica atrás do conteúdo */
     }
 
     main {
       flex: 1;
     }
 
+    /* 🔥 Força textos pretos a ficarem brancos */
     h1, p, li, a, span, .breadcrumb, .lead {
       color: white !important;
     }
@@ -57,6 +59,7 @@
       color: white !important;
     }
 
+    /* 🔳 Seus quadrados */
     .quadrado {
       aspect-ratio: 60/9;
       width: 320px;
@@ -64,7 +67,7 @@
       border-radius: 15px;
       border: 3px solid rgb(132, 0, 255);
       position: absolute;
-      top: 115px;
+      top: 170px;
       left: 520px;
     }
 
@@ -75,7 +78,7 @@
       border-radius: 15px;
       border: 3px solid rgb(132, 0, 255);
       position: absolute;
-      top: 185px;
+      top: 240px;
       left: 450px;
     }
   </style>
@@ -87,8 +90,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
+      <!-- 🔥 Logo trocado por imagem -->
       <a class="navbar-brand" href="#">
-        <img src="assets/cantina+.png" alt="Cantina +" height="40" style="filter: brightness(0) invert(1);">
+        <img src="assets/cantina+.png" alt="Cantina +" height="40">
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -115,6 +119,11 @@
     </div>
   </nav>
 
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"> Início </li>
+    </ol>
+  </nav>
 
   <main class="container my-5">
     <h1 class="text-center mb-4">Bem-vindo(a)!</h1>
