@@ -15,19 +15,46 @@
     crossorigin="anonymous">
 
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
 
-    body {
-      display: flex;
-      flex-direction: column;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
-    main {
-      flex: 1;
-    }
+  /* FUNDO DO RESTAURANTE */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/restaurante.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.35);
+    z-index: -1;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  /* DEIXA OS TEXTOS BRANCOS */
+  h1, h3, h5, p, li, a, span, .breadcrumb, .lead {
+    color: white !important;
+  }
+
+  .breadcrumb-item.active {
+    color: white !important;
+  }
+
   </style> 
 
 </head>
