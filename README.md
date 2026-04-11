@@ -12,6 +12,7 @@ Um aplicativo que visa melhorar o cotidiano dos estudantes e funcionarios da can
 - [Requisitos](docs/requisitos.md)
 - [Histórias de Usuário](docs/historias_usuario.md)
 - [Critérios de Aceitação](docs/criterios_aceitacao.md)
+
 ## Status
 Projeto em fase de desenvolvimento
 ## Equipe
